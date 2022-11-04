@@ -1,0 +1,59 @@
+.App {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.App .container{
+  /* border: 1px solid white; */
+  width: 90%;
+  height: 90vh;
+  position: absolute;
+  left: 5%;
+  top: 5vh;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 20px;
+  color: white;
+}
+
+.App .container #inp{
+  width: 50%;
+}
+.App .container input:invalid{
+  animation: nawaz .3s;
+}
+@keyframes nawaz{
+  25% { transform: translateX(4px);}
+  50% { transform: translateX(-4px);}
+  75% { transform: translateX(4px);}
+}
+
+
+
+@media (max-width: 536px ) {
+  .container .fi{
+    font-size: 20px;
+  }
+  .container .se{
+    font-size: 17px;
+  }
+  .App .container #inp{
+    width: 100%;
+  }
+}
+
+@media (max-width: 286) {
+  .container .fi{
+    font-size: 17px;
+  }
+  .container .se{
+    font-size: 12px;
+  }
+  .App .container #inp{
+    width: 100%;
+  }
+  
+}
